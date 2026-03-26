@@ -15,6 +15,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call([
+            AdminUserSeeder::class,
+        ]);
+
         $levels = ['Foundation', 'Diploma', 'Bachelor Degree', 'Master Degree', 'PhD'];
 
         foreach ($levels as $level) {

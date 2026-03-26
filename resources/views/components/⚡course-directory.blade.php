@@ -110,7 +110,8 @@ new class extends Component {
                 </div>
                 <div class="bg-gray-50 px-6 py-4 border-t border-gray-200 flex justify-between items-center">
                     <span class="font-bold text-gray-900">RM {{ number_format($course->estimated_fee) }}</span>
-                    <button class="text-sm font-medium text-blue-600 hover:text-blue-500">View Details</button>
+                    <a href="{{ route('courses.show', $course->id) }}" wire:navigate
+                        class="text-sm font-medium text-blue-600 hover:text-blue-500">View Details</a>
                 </div>
             </div>
         @endforeach

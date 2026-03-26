@@ -20,4 +20,8 @@ class Course extends Model
     {
         return $this->belongsTo(StudyLevel::class);
     }
+    public function savedByUsers()
+    {
+        return $this->belongsToMany(User::class, 'course_user')->withTimestamps();
+    }
 }
