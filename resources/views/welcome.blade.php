@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EduSearch Malaysia</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @livewireStyles
+</head>
+
+<body class="bg-gray-100 antialiased font-sans">
+
+    <nav class="bg-blue-600 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <h1 class="text-white text-2xl font-bold">EduSearch MY</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <livewire:course-directory />
+    </main>
+
+    @livewireScripts
+</body>
+
+</html>
