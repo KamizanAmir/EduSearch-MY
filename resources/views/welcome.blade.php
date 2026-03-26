@@ -23,7 +23,7 @@
                         <a href="{{ url('/dashboard') }}"
                             class="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
                         @if (auth()->user()->role === 'admin')
-                            <a href="#"
+                            <a href="{{ route('admin.panel') }}"
                                 class="text-white hover:text-gray-200 px-3 py-2 rounded-md text-sm font-medium">Admin
                                 Panel</a>
                         @endif
