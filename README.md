@@ -7,6 +7,7 @@ Follow the steps below to run this project locally.
 Make sure all commands are executed in the same project directory:
 
 C:/path/to/your/project
+Copy the .env.example to .env first before proceed to the next step 😁
 ⚙️ Run the Application
 
 Open multiple terminals (in the same project folder) and run the following commands:
